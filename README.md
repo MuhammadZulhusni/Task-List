@@ -1,3 +1,5 @@
+# Task List
+
 ## Installation
 
 Please check the official laravel installation guide for server requirements before you start. [Official Documentation](https://laravel.com/docs/5.4/installation#installation)
@@ -76,3 +78,7 @@ docker-compose exec php php artisan migrate
 docker-compose exec php php artisan db:seed
 docker-compose exec php php artisan serve --host=0.0.0.0
 ```
+
+## Usage
+
+Once the installation is complete, you can use the task list application to manage your tasks.
