@@ -2,8 +2,6 @@
 
 ## Installation
 
-Please check the official laravel installation guide for server requirements before you start. [Official Documentation](https://laravel.com/docs/5.4/installation#installation)
-
 Clone the repository
 
     git clone git@github.com:zulhusni2003/Task-List.git
@@ -32,15 +30,7 @@ Start the local development server
 
     php artisan serve
 
-You can now access the server at http://localhost:8000
-
-**TL;DR command list**
-
-    git clone git@github.com:zulhusni2003/Task-List.git
-    cd Task-List
-    composer install
-    cp .env.example .env
-    php artisan key:generate
+You can now access the server.
     
 **Make sure you set the correct database connection information before running the migrations** [Environment variables](#environment-variables)
 
@@ -61,24 +51,6 @@ Run the database seeder and you're done
 
     php artisan migrate:refresh
     
-## Docker
-
-To install with [Docker](https://www.docker.com), run following commands:
-
-```
-git clone git@github.com:zulhusni2003/Task-List.git
-cd Task-List
-cp .env.example.docker .env
-docker run -v $(pwd):/app composer install
-cd ./docker
-docker-compose up -d
-docker-compose exec php php artisan key:generate
-docker-compose exec php php artisan jwt:generate
-docker-compose exec php php artisan migrate
-docker-compose exec php php artisan db:seed
-docker-compose exec php php artisan serve --host=0.0.0.0
-```
-
 ## Usage
 
 Once the installation is complete, you can use the task list application to manage your tasks.
