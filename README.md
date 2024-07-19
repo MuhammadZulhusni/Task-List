@@ -4,7 +4,7 @@
 
 Clone the repository
 
-    git clone git@github.com:zulhusni2003/Task-List.git
+    git clone https://github.com/MuhammadZulhusni/Task-List.git
 
 Switch to the repo folder
 
