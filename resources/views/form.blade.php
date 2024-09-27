@@ -23,16 +23,18 @@
     
     <!-- Title Input -->
     <div class="mb-4">
-      <label for="title">
-        Title
-      </label>
-      <input type="text" name="title" id="title"
-        class="{{ $errors->has('title') ? 'border-red-500' : '' }}"
-        value="{{ $task->title ?? old('title') }}" />
-      @error('title')
-        <p class="error-message">{{ $message }}</p>
-      @enderror
-    </div>
+    <!-- Label for the title input field -->
+    <label for="title">Title</label>
+    <!-- Input field for the title. Adds a red border class if there's a validation error for 'title'. -->
+    <input type="text" name="title" id="title"
+      class="{{ $errors->has('title') ? 'border-red-500' : '' }}" 
+      value="{{ $task->title ?? old('title') }}" /> <!-- Keeps previously entered value or task's title -->
+    <!-- If there's an error with the 'title' field, display the error message -->
+    @error('title')
+      <p class="error-message">{{ $message }}</p> <!-- Error message shown here -->
+    @enderror
+  </div>
+
 
     <!-- Description Input -->
     <div class="mb-4">
