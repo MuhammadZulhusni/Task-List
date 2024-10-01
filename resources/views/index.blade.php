@@ -163,7 +163,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 <script>
-    // Wrap every letter in a span
+    // This script animates text by wrapping each letter in a span and applying an animation effect 
+    // that moves the letters upwards and fades the text out in a loop.
     var textWrapper = document.querySelector('.ml6 .letters');
     textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
@@ -182,5 +183,6 @@
             delay: 1000
         });
 </script>
+
 
 @endsection
